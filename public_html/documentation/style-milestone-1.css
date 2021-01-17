@@ -28,7 +28,6 @@ header {
     font-size: 3rem;
     background-color: var(--bg-color);
     padding: 1em;
-    border-bottom: 2px solid var(--border-color);
 }
 
 header h1 {
