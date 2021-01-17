@@ -1,0 +1,80 @@
+:root {
+    --main-text-color: #ffffff;
+    --bg-color: #393939;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "side content side"
+            "footer footer footer";
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(45deg, #ffc200, #cae664, #00ffb7);
+    height: 100vh;
+}
+
+header {
+    color: var(--main-text-color);
+    grid-area: header;
+    margin: 0;
+    font-size: 3rem;
+    background-color: var(--bg-color);
+    padding: 2em;
+}
+
+header h1 {
+    margin: 0 auto 0 auto;
+    padding: 0.5em;
+}
+
+.content {
+    grid-area: content;
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+    border-radius: 0.5em;
+    padding: 2em;
+    margin: 1em;
+}
+
+.content:hover {
+    box-shadow: #282828 5px 5px 20px;
+}
+
+.content h1, h2, h3, h4, h5, h6 {
+    color: #00ffb7;
+}
+
+.purpose-audience-goal {
+    opacity: 0.6;
+    transition: opacity 300ms ease-in-out;
+    padding: 1em;
+}
+
+.purpose-audience-goal:hover {
+    opacity: 1;
+    border: solid 1px #727272;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.persona {
+    opacity: 0.6;
+    transition: opacity 300ms ease-in-out;
+    padding: 1em;
+}
+
+.persona:hover {
+    opacity: 1;
+    border: solid 1px #727272;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+#img-persona {
+    height: 25%;
+    width: 25%;
+}
+
