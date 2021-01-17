@@ -3,6 +3,9 @@
     --bg-color: #393939;
     --highlight-text-color: #00ffb7;
     --border-color: #9a9a9a;
+    --grad-color-1: #ffc200;
+    --grad-color-2: #cae664;
+    --grad-color-3: #00ffb7;
 }
 
 body {
@@ -14,7 +17,7 @@ body {
     gap: 2rem;
     align-items: center;
     justify-items: center;
-    background: linear-gradient(45deg, #ffc200, #cae664, #00ffb7) no-repeat fixed;
+    background: linear-gradient(45deg, var(--grad-color-1), var(--grad-color-2), var(--grad-color-3)) no-repeat fixed;
     height: 100vh;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     margin: 0;
