@@ -9,20 +9,22 @@ body {
             "header header header"
             "side content side"
             "footer footer footer";
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     justify-items: center;
     background: linear-gradient(45deg, #ffc200, #cae664, #00ffb7);
     height: 100vh;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 header {
     color: var(--main-text-color);
     grid-area: header;
+    text-align: center;
     margin: 0;
     font-size: 3rem;
     background-color: var(--bg-color);
-    padding: 2em;
+    padding: 1em;
 }
 
 header h1 {
@@ -61,6 +63,10 @@ header h1 {
 }
 
 .persona {
+    display: grid;
+    /*grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
     opacity: 0.6;
     transition: opacity 300ms ease-in-out;
     padding: 1em;
@@ -74,7 +80,7 @@ header h1 {
 }
 
 #img-persona {
-    height: 25%;
-    width: 25%;
+    height: 50%;
+    width: 50%;
 }
 
