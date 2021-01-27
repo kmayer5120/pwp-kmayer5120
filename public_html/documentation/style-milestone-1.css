@@ -119,7 +119,23 @@ header h1 {
 .user-story ul, li {
     padding: 1.5em;
 }
+.content-strategy {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    opacity: 0.6;
+    border-bottom: 0 solid var(--border-color);
+    border-top: 0 solid var(--border-color);
+    transition: opacity 300ms ease-in-out;
+    padding: 1em;
+}
 
+.content-strategy:hover {
+    opacity: 1;
+    border-bottom: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+    padding: 1em;
+}
 #img-persona {
     height: 50%;
     width: 50%;
