@@ -9,6 +9,11 @@
     --grad-color-3: #00ffb7;
 }
 
+main {
+    line-height: 2rem;
+}
+
+
 body {
     display: grid;
     grid-template-areas:
@@ -46,7 +51,12 @@ header h1 {
     background-color: var(--bg-color);
     border-radius: 0.5em;
     padding: 1em;
-    margin: 1em;
+    margin: 3rem;
+    width: 90vw;
+}
+
+.content h1 {
+    margin-left: 20rem;
 }
 
 .content ul {
