@@ -24,6 +24,10 @@ body {
     height: 25%;
 }
 
+#links-container {
+    background-color: var(--grape);
+}
+
 header {
     display: flex;
     justify-content: center;
