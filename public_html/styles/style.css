@@ -1,0 +1,36 @@
+:root {
+    /*colors from graphic designer*/
+    --blueberry: #355170;
+    --grape: #6E597A;
+    --grapefruit: #E66B70;
+    --peach: #EAAD8C;
+    --light: #ffd7c9;
+    --dark: #1b2939;
+    --light-text: #ffffff;
+    --dark-text: #000000;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--light);
+}
+
+
+#img-navbar {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 25%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grape);
+}
+
+.navbar {
+    background-color: var(--blueberry);
+}
