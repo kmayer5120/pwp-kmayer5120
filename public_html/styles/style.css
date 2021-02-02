@@ -4,10 +4,12 @@
     --grape: #6E597A;
     --grapefruit: #E66B70;
     --peach: #eaad8c;
-    --light: #ffdbcc;
+    --light: #fff0e9;
     --dark: #1b2939;
     --light-text: #ffffff;
     --dark-text: #000000;
+    --shadow: #282828;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
 body {
@@ -23,10 +25,17 @@ header {
     flex-direction: column;
     background-color: var(--grape);
 }
-
 figure {
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+form {
+    background-color: var(--grape);
+    color: var(--light-text);
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 #img-header {
@@ -38,15 +47,27 @@ figure {
 
 #gallery img {
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 #links-container {
-    background-color: var(--peach);
+    background-color: var(--light);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+#btn-send {
+    background-color: var(--grapefruit);
+    color: var(--light-text);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--box-shadow);
 }
 
 
