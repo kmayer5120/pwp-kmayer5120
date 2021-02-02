@@ -54,6 +54,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0;
+    height: 10rem;
     background-color: var(--blueberry);
     color: var(--light-text);
 }
