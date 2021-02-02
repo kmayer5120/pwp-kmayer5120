@@ -29,11 +29,15 @@ figure {
     font-weight: bold;
 }
 
-#img-navbar {
+#img-header {
     margin: 0;
     padding: 0;
     width: 25%;
     height: 25%;
+}
+
+#gallery img {
+    border-radius: 10px;
 }
 
 #links-container {
