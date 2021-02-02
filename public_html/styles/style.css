@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
 :root {
     /*colors from graphic designer*/
     --blueberry: #355170;
@@ -5,6 +8,7 @@
     --grapefruit: #E66B70;
     --peach: #eaad8c;
     --light: #fff0e9;
+    --off-white: #fffafa;
     --dark: #1b2939;
     --light-text: #ffffff;
     --dark-text: #000000;
@@ -12,10 +16,15 @@
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Handlee', cursive;
+}
+
 body {
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--light);
+    background-color: var(--off-white);
 }
 
 header {
@@ -25,6 +34,7 @@ header {
     flex-direction: column;
     background-color: var(--grape);
 }
+
 figure {
     font-size: 0.9rem;
     font-weight: bold;
@@ -38,6 +48,16 @@ form {
     box-shadow: var(--box-shadow);
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--blueberry);
+    color: var(--light-text);
+}
+
 #img-header {
     margin: 0;
     padding: 0;
@@ -45,8 +65,17 @@ form {
     height: 25%;
 }
 
+#about-me {
+    background-color: var(--light);
+    box-shadow: var(--box-shadow);
+}
+
 #gallery img {
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+#services {
     box-shadow: var(--box-shadow);
 }
 
