@@ -3,8 +3,8 @@
     --blueberry: #355170;
     --grape: #6E597A;
     --grapefruit: #E66B70;
-    --peach: #EAAD8C;
-    --light: #ffd7c9;
+    --peach: #eaad8c;
+    --light: #ffdbcc;
     --dark: #1b2939;
     --light-text: #ffffff;
     --dark-text: #000000;
@@ -16,6 +16,18 @@ body {
     background-color: var(--light);
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--grape);
+}
+
+figure {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
 
 #img-navbar {
     margin: 0;
@@ -25,15 +37,14 @@ body {
 }
 
 #links-container {
-    background-color: var(--grape);
+    background-color: var(--peach);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--grape);
-}
 
 .navbar {
     background-color: var(--blueberry);
