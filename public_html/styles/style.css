@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 
 :root {
     /*colors from graphic designer*/
@@ -17,7 +17,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Handlee', cursive;
+    font-family: 'Crafty Girls', cursive;
 }
 
 body {
@@ -81,7 +81,7 @@ footer {
 }
 
 #links-container {
-    background-color: var(--light);
+    background-color: var(--peach);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
