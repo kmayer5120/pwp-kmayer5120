@@ -50,13 +50,19 @@ form {
 
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    border-radius: 10px;
+    bottom: 0;
     height: 10rem;
+    width: 100vw;
     background-color: var(--blueberry);
     color: var(--light-text);
+}
+
+footer svg {
+    fill: var(--grapefruit);
 }
 
 #img-header {
@@ -74,6 +80,8 @@ footer {
 #gallery img {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #services {
