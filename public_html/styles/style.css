@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about-me {
-    background-color: var(--light);
+    background-color: var(--off-white);
     box-shadow: var(--box-shadow);
 }
 
@@ -96,13 +96,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #links-container {
-    background-color: var(--peach);
+    background-color: var(--blueberry);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
+}
+
+#links-container svg {
+    fill: var(--off-white);
+    width: 64px;
+    height: 64px;
 }
 
 /*COMPONENT STYLING*/
@@ -117,4 +123,8 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--box-shadow);
 }
 
+[alt="etsy logo"], [alt="ravelry logo"] {
+    width: 64px;
+    height: 64px;
+}
 
