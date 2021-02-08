@@ -16,10 +16,8 @@
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Crafty Girls', cursive;
-}
 
+/*HTML ELEMENT STYLING*/
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -53,7 +51,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     bottom: 0;
     height: 10rem;
     width: 100vw;
@@ -64,6 +61,16 @@ footer {
 footer svg {
     fill: var(--grapefruit);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crafty Girls', cursive;
+}
+
+.navbar {
+    background-color: var(--blueberry);
+}
+
+/*SECTION STYLING*/
 
 #img-header {
     margin: 0;
@@ -98,6 +105,8 @@ footer svg {
     box-shadow: var(--box-shadow);
 }
 
+/*COMPONENT STYLING*/
+
 #btn-send {
     background-color: var(--grapefruit);
     color: var(--light-text);
@@ -109,6 +118,3 @@ footer svg {
 }
 
 
-.navbar {
-    background-color: var(--blueberry);
-}
