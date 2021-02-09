@@ -99,6 +99,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--box-shadow);
 }
 
+#services-tools img {
+    border-radius: 10px;
+}
+
 #links-container {
     background-color: var(--blueberry);
     display: flex;
