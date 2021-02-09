@@ -84,6 +84,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--box-shadow);
 }
 
+#gallery {
+    background: var(--blueberry);
+}
+
 #gallery img {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
