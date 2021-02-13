@@ -119,10 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 64px;
 }
 
-#recaptcha {
-    max-width: 3rem;
-    padding: 1rem;
-}
+
 
 /*COMPONENT STYLING*/
 
@@ -134,6 +131,13 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     border: none;
     box-shadow: var(--box-shadow);
+}
+
+.g-recaptcha {
+    transform: scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.77);
+    -webkit-transform-origin:0 0;
 }
 
 [alt="etsy logo"], [alt="ravelry logo"] {

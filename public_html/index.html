@@ -341,8 +341,12 @@
                       placeholder="Message to send. (Max 2,000 characters.)" required></textarea>
         </div>
         <div class="form-group">
-            <div class="g-recaptcha" id="recaptcha" data-sitekey="6LdZUVQaAAAAAPIY2wsU52pf6cQuPyKqg9kSGo1R"></div>
-            <button id="btn-send">Send</button>
+            <div class="row">
+                <div class="g-recaptcha" id="recaptcha" data-sitekey="6LdZUVQaAAAAAPIY2wsU52pf6cQuPyKqg9kSGo1R"></div>
+            </div>
+            <div class="row">
+                <button id="btn-send" class="py-2" type="submit">Send</button>
+            </div>
         </div>
     </form>
     <div id="output-area"></div>
@@ -366,13 +370,6 @@
         </footer>
     </div>
 </section>
-
-<!--Re: Contact form:-->
-<!--    Dropdown having several options for subject-->
-<!--        - Pattern Testing-->
-<!--        - Custom Order-->
-<!--        - Shipping Inquiries-->
-<!--        - General-->
 
 <!-- Optional JavaScript; choose one of the two! -->
 
