@@ -11,7 +11,8 @@
     --off-white: #fffafa;
     --dark: #1b2939;
     --light-text: #ffffff;
-    --dark-text: #000000;
+    --muted-text: #3b3b3b;
+    --dark-text: #131313;
     --shadow: #282828;
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
@@ -20,6 +21,7 @@
 /*HTML ELEMENT STYLING*/
 body {
     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
     margin: 0;
     box-sizing: border-box;
     background-color: var(--off-white);
@@ -52,7 +54,7 @@ footer {
     justify-content: center;
     align-items: center;
     bottom: 0;
-    height: 10rem;
+    height: 5rem;
     width: 100vw;
     background-color: var(--blueberry);
     color: var(--light-text);
@@ -64,6 +66,16 @@ footer svg {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Crafty Girls', cursive;
+    color: var(--dark-text);
+    font-weight: 500;
+    line-height: 1;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 0.90rem;
+    color: var(--muted-text);
+    width: 75%;
 }
 
 .navbar {
@@ -131,6 +143,18 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     border: none;
     box-shadow: var(--box-shadow);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#menu-descriptor {
+    color: var(--dark-text);
+    margin-left: 10px;
 }
 
 .g-recaptcha {
