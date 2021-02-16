@@ -1,6 +1,7 @@
 //Contact form validation with jQuery
 $(document).ready(() => {
-    $("#contact").validate({
+    const contactForm = $("#contact");
+    contactForm.validate({
         debug: true,
         errorClass: "alert alert-danger",
         ErrorLabelContainer: "#output-area",
@@ -34,13 +35,13 @@ $(document).ready(() => {
             }
         },
         submitHandler: (form) => {
-            $("#contact").ajaxSubmit({
+            contactForm.ajaxSubmit({
                 type: "POST",
                 url: $("#contact").attr('action'),
                 success: (ajaxOutput) => {
-                    $("#output-area").css("display","")
-                    $("#output-area").html(ajaxOutput)
-
+                    const outputArea = $("#output-area")
+                    outputArea.css("display","")
+                    outputArea.html(ajaxOutput)
                     if($(".alert-success") >= 1) {
                         $("#contact")[0].reset()
                     }
