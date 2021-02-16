@@ -35,34 +35,35 @@ const handleGetRequest = (req, res) => {
     return res.json("The express server is live.");
 }
 
-const handlePostRequest = (req, res, nextFunction) => {
-    res.append("Content-Type", "text/html")
-    console.log(req.body);
-    if(req.recaptcha.error) {
-        return res.send(`<div class="alert alert-danger" role='alert'><strong>There was an error with recaptcha!</strong></div>`)
+const handlePostRequest = (request, response, nextFunction) => {
+    response.append("Content-Type", "text/html")
+    console.log(request.body);
+    if(request.recaptcha.error) {
+        return response.send(`<div class="alert alert-danger" role='alert'><strong>There was an error with recaptcha!</strong></div>`)
     }
 
-    const errors = validationResult(req)
+    const errors = validationResult(request)
 
     if(errors.isEmpty() === false) {
         const currentError = errors.array()[0]
-        return res.send(`<div class="alert alert-danger" role="alert"><strong>${currentError.msg}</strong></div>`)
+        return response.send(`<div class="alert alert-danger" role="alert"><strong>${currentError.msg}</strong></div>`)
     }
 
     //object destructuring to pull out content from request body object
-    const {email, name, subject, message} = req.body;
+    const {email, name, subject, message} = request.body;
     const mailgunData = {
         to: process.env.MAIL_RECIPIENT,
         from: `${name} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
         subject: `${email}: ${subject}`,
-        text: `${message}`
+        text: message
     }
 
     mg.messages().send(mailgunData, (error) => {
         if(error) {
-            return res.send(Buffer.from(`<div class='alert alert-danger' role='alert'>Unable to send email!</div>`))
+            return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'>Unable to send email!</div>`))
         }
-        return res.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
+        console.log("in success")
+        return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
     });
 }
 
