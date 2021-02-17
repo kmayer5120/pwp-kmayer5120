@@ -145,12 +145,19 @@ p {
     box-shadow: var(--box-shadow);
 }
 
+#contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #contact {
+    width: 85vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
 }
+
 
 #menu-descriptor {
     color: var(--dark-text);
@@ -178,3 +185,14 @@ p {
     margin-right: auto;
 }
 
+
+@media screen and (min-width: 900px) {
+    #contact {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+}
