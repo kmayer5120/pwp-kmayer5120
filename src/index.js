@@ -3,9 +3,9 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 require('dotenv').config();
-const Recaptcha = require("express-recaptcha").RecaptchaV2;
 const mailgun = require("mailgun-js");
 const {check, validationResult} = require("express-validator");
+const Recaptcha = require("express-recaptcha").RecaptchaV2;
 
 //array holding check functions for validation of fields
 const validation = [
@@ -62,14 +62,13 @@ const handlePostRequest = (request, response, nextFunction) => {
         if(error) {
             return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'>Unable to send email!</div>`))
         }
-        console.log("in success")
-        return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
     });
+    return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
 }
 
 indexRoute.route("/")
     .get(handleGetRequest)
-    .post(recaptcha.middleware.verify, validation, handlePostRequest);
+    .post(validation, recaptcha.middleware.verify, handlePostRequest);
 
 app.use("/apis", indexRoute);
 
