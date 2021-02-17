@@ -35,7 +35,7 @@ const handleGetRequest = (req, res) => {
     return res.json("The express server is live.");
 }
 
-const handlePostRequest = (request, response, nextFunction) => {
+const handlePostRequest = (request, response) => {
     response.append("Content-Type", "text/html")
     console.log(request.body);
     if(request.recaptcha.error) {
@@ -72,6 +72,4 @@ indexRoute.route("/")
 
 app.use("/apis", indexRoute);
 
-app.listen(4200, () => {
-    console.log("Express successfully built.")
-});
+app.listen(4200, () => console.log("Express successfully built."));
