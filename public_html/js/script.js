@@ -35,7 +35,7 @@ $(document).ready(() => {
             }
         },
         submitHandler: (form) => {
-            contactForm.ajaxSubmit({
+            $("#contact").ajaxSubmit({
                 type: "POST",
                 url: $("#contact").attr('action'),
                 success: (ajaxOutput) => {
