@@ -12,7 +12,7 @@ $(document).ready(() => {
             name: {
                 required: true
             },
-            emailAddress: {
+            email: {
                 email: true,
                 required: true
             },
@@ -25,7 +25,7 @@ $(document).ready(() => {
             name: {
                 required: "Name is a required field."
             },
-            emailAddress: {
+            email: {
                 email: "Please provide a valid email address.",
                 required: "Email is a required field."
             },
