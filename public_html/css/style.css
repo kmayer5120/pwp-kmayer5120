@@ -182,7 +182,7 @@ p {
     height: 64px;
 }
 
-#etsy-logo i {
+#etsy-logo {
     background-color: #ffffff;
     color: var(--blueberry);
     border-radius: 50%;
@@ -198,8 +198,6 @@ p {
         justify-content: center;
         padding: 1rem;
     }
-
-
 }
 
 @media screen and (max-width: 500px) {
