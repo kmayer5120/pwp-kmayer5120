@@ -110,7 +110,8 @@
 <section class="container-fluid py-3 my-3">
     <h3 class="mt-5">Gallery</h3>
     <div class="row justify-content-center" id="gallery">
-        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">
+        <!--        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">-->
+        <div>
             <!--start modal-->
             <a href="#modal-1" role="button" data-toggle="modal">
                 <img src="" data-src="./images/gallery/gallery-small/beanie-1.jpg" alt="beanie"
@@ -132,7 +133,8 @@
                 </div>
             </div> <!--end modal-->
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">
+<!--        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">-->
+        <div>
             <!--start modal-->
             <a href="#modal-2" role="button" data-toggle="modal">
                 <img src="" data-src="./images/gallery/gallery-small/towel-1.jpg" alt="towel" class="img-fluid">
@@ -153,7 +155,8 @@
                 </div>
             </div> <!--end modal-->
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">
+<!--        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">-->
+        <div>
             <!--start modal-->
             <a href="#modal-3" role="button" data-toggle="modal">
                 <img src="" data-src="./images/gallery/gallery-small/earwarmer-2.jpg" alt="" class="img-fluid">
@@ -174,7 +177,8 @@
                 </div>
             </div> <!--end modal-->
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">
+<!--        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">-->
+        <div>
             <!--start modal-->
             <a href="#modal-4" role="button" data-toggle="modal">
                 <img src="" data-src="./images/gallery/gallery-small/scarf-1.jpg" alt="scarf" class="img-fluid">
@@ -195,7 +199,8 @@
                 </div>
             </div> <!--end modal-->
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">
+<!--        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">-->
+        <div>
             <!--start modal-->
             <a href="#modal-5" role="button" data-toggle="modal">
                 <img src="" data-src="./images/gallery/gallery-small/pot-holder-2.jpg" alt="scarf and ear warmer"
@@ -217,7 +222,8 @@
                 </div>
             </div> <!--end modal-->
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">
+<!--        <div class="col-lg-2 col-md-3 col-sm-6 d-flex justify-content-center mx-auto my-3">-->
+        <div>
             <!--start modal-->
             <a href="#modal-6" role="button" data-toggle="modal">
                 <img src="" data-src="./images/gallery/gallery-small/scarf-earwarmer-2.jpg" alt="scarf and ear warmer"
@@ -335,38 +341,36 @@
 <!--end services -->
 <!-- contact form -->
 <section class="container-fluid" id="contact-wrapper">
-    <div>
-        <form action="./apis/" id="contact" method="post" novalidate class="p-5 my-4">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" name="email"
-                       placeholder="email@your-email.com">
-            </div>
-            <div class="form-group">
-                <label for="subject">Purpose</label>
-                <select class="form-control" id="subject" name="subject">
-                    <option>General Inquiries</option>
-                    <option>Custom Order</option>
-                    <option>Pattern Testing</option>
-                    <option>Shipping Inquiries</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" name="message" maxlength="2000" rows="3"
-                          placeholder="Message to send. (Max 2,000 characters.)" required></textarea>
-            </div>
-            <div class="g-recaptcha" id="recaptcha" data-sitekey="6LdZUVQaAAAAAPIY2wsU52pf6cQuPyKqg9kSGo1R"></div>
-            <div class="form-group">
-                <button id="btn-send" class="py-2" type="submit">SEND</button>
-            </div>
-        </form>
-    </div>
-    <div id="output-area"></div>
+    <form action="./apis/" id="contact" method="post" novalidate class="p-5 my-4">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email"
+                   placeholder="email@your-email.com">
+        </div>
+        <div class="form-group">
+            <label for="subject">Purpose</label>
+            <select class="form-control" id="subject" name="subject">
+                <option>General Inquiries</option>
+                <option>Custom Order</option>
+                <option>Pattern Testing</option>
+                <option>Shipping Inquiries</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" maxlength="2000" rows="3"
+                      placeholder="Message to send. (Max 2,000 characters.)" required></textarea>
+        </div>
+        <div class="g-recaptcha" id="recaptcha" data-sitekey="6LdZUVQaAAAAAPIY2wsU52pf6cQuPyKqg9kSGo1R"></div>
+        <div class="form-group">
+            <button id="btn-send" class="py-2" type="submit">SEND</button>
+        </div>
+        <div id="output-area"></div>
+    </form>
 </section>
 <!--end contact form -->
 <!-- footer -->

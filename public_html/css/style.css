@@ -98,11 +98,17 @@ p {
 
 #gallery {
     background: var(--blueberry);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
 }
 
 #gallery img {
     border-radius: 10px;
-    box-shadow: var(--box-shadow);
+    padding: 1em;
     max-width: 100%;
     max-height: 100%;
 }
@@ -132,7 +138,6 @@ p {
 }
 
 
-
 /*COMPONENT STYLING*/
 
 #btn-send {
@@ -151,6 +156,7 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 #contact {
     width: 85vw;
     display: flex;
@@ -159,7 +165,6 @@ p {
     padding: 1rem;
 }
 
-
 #menu-descriptor {
     color: var(--dark-text);
     margin-left: 10px;
@@ -167,9 +172,9 @@ p {
 
 .g-recaptcha {
     transform: scale(0.77);
-    transform-origin:0 0;
-    -webkit-transform:scale(0.77);
-    -webkit-transform-origin:0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.77);
+    -webkit-transform-origin: 0 0;
 }
 
 #ravelry-logo {
@@ -178,14 +183,13 @@ p {
 }
 
 #etsy-logo {
-    background-color: var(--light);
+    background-color: #ffffff;
     color: var(--blueberry);
     border-radius: 50%;
     padding: 3px 12px;
     font-size: 32px;
     margin-right: auto;
 }
-
 
 @media screen and (min-width: 900px) {
     #contact {
@@ -196,4 +200,15 @@ p {
         padding: 1rem;
     }
 
+
+}
+
+@media screen and (max-width: 500px) {
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+        grid-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
 }
