@@ -13,7 +13,7 @@
     --dark: #1b2939;
     --light-text: #ffffff;
     --muted-text: #3b3b3b;
-    --dark-text: #131313;
+    --dark-text: #111111;
     --shadow: #282828;
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
@@ -41,6 +41,7 @@ header {
     flex-direction: column;
     background-color: var(--grape);
 }
+
 header h1 {
     color: var(--grapefruit);
 }
@@ -72,6 +73,12 @@ footer {
 
 footer svg {
     fill: var(--grapefruit);
+    transition: all 300ms ease-in-out;
+}
+
+footer svg:hover, svg:focus {
+    fill: var(--off-white);
+    transform: translateY(-1.5px);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,6 +93,12 @@ p {
     font-size: 0.90rem;
     color: var(--muted-text);
     width: 75%;
+}
+
+nav {
+    background-color: var(--off-white);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 3rem;
 }
 
 .navbar {
@@ -125,6 +138,7 @@ p {
 }
 
 #services {
+    background-color: var(--off-white);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
@@ -147,6 +161,22 @@ p {
     fill: white;
     width: 96px;
     height: 96px;
+    transition: all ease-in-out 250ms;
+}
+
+#ravelry-logo {
+    width: 15rem;
+    height: auto;
+    transition: transform ease-in-out 250ms;
+}
+
+#etsy-logo {
+    transition: transform ease-in-out 250ms;
+}
+
+#etsy-logo:hover, #ravelry-logo:hover, #links-container svg:hover {
+    transform: translateY(-1.5px) scale(1.05);
+    fill: var(--grapefruit);
 }
 
 #links-description {
@@ -164,6 +194,11 @@ p {
     border-radius: 10px;
     border: none;
     box-shadow: var(--box-shadow);
+    transition: transform ease-in-out 300ms;
+}
+
+#btn-send:hover {
+    transform: translateY(-0.15rem);
 }
 
 #contact-wrapper {
@@ -193,15 +228,6 @@ p {
     -webkit-transform-origin: 0 0;
 }
 
-#ravelry-logo {
-    width: 10rem;
-    height: auto;
-}
-
-#etsy-logo {
-    max-width: 30%;
-    height: auto;
-}
 
 /*
     Large Screens
