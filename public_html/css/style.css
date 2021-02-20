@@ -131,9 +131,13 @@ p {
 }
 
 #links-container svg {
-    fill: var(--off-white);
-    width: 64px;
-    height: 64px;
+    fill: white;
+    width: 96px;
+    height: 96px;
+}
+
+#links-description {
+    color: var(--light-text);
 }
 
 
@@ -177,16 +181,13 @@ p {
 }
 
 #ravelry-logo {
-    width: 64px;
-    height: 64px;
+    width: 10rem;
+    height: auto;
 }
 
 #etsy-logo {
-    background-color: #ffffff;
-    color: var(--blueberry);
-    border-radius: 50%;
-    padding: 3px 12px;
-    font-size: 32px;
+    max-width: 30%;
+    height: auto;
 }
 
 @media screen and (min-width: 900px) {
