@@ -1,3 +1,4 @@
+/* Bring in Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 
@@ -17,14 +18,20 @@
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
+/*
+    Global
+ */
+
+* {
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
 
 /*HTML ELEMENT STYLING*/
 body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    margin: 0;
-    box-sizing: border-box;
     background-color: var(--off-white);
+    font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -33,6 +40,9 @@ header {
     align-items: center;
     flex-direction: column;
     background-color: var(--grape);
+}
+header h1 {
+    color: var(--grapefruit);
 }
 
 figure {
@@ -87,13 +97,14 @@ p {
 #img-header {
     margin: 0;
     padding: 0;
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
 }
 
 #about-me {
     background-color: var(--off-white);
     box-shadow: var(--box-shadow);
+    border-radius: 10px;
 }
 
 #gallery {
@@ -103,16 +114,18 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 #gallery img {
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 0.75rem;
     max-width: 100%;
     max-height: 100%;
 }
 
 #services {
+    border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
 
@@ -190,6 +203,9 @@ p {
     height: auto;
 }
 
+/*
+    Large Screens
+ */
 @media screen and (min-width: 900px) {
     #contact {
         width: 50vw;
@@ -198,14 +214,38 @@ p {
         justify-content: center;
         padding: 1rem;
     }
+
+    #gallery {
+        width: 80vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #about-me-wrapper {
+        width: 85vw;
+    }
 }
 
+/*
+    Small Screens
+ */
 @media screen and (max-width: 500px) {
+    #img-header {
+        width: 75%;
+        height: 75%;
+    }
+
     #gallery {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
         grid-gap: 1rem;
         justify-content: center;
         align-items: center;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    #services {
+        margin: 1rem;
     }
 }
