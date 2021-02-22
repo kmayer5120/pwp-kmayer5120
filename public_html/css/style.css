@@ -59,6 +59,10 @@ form {
     box-shadow: var(--box-shadow);
 }
 
+form h3 {
+    color: var(--light-text);
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -90,14 +94,14 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     line-height: 1.6;
-    font-size: 0.90rem;
+    font-size: 1rem;
     color: var(--muted-text);
-    width: 75%;
+    width: 80%;
 }
 
 p a {
     line-height: 1.6;
-    font-size: 0.90rem;
+    font-size: 1rem;
     color: var(--grapefruit);
     transition: color 250ms ease-in-out;
 }
@@ -186,7 +190,7 @@ nav {
 }
 
 #ravelry-logo {
-    width: 15rem;
+    width: 10rem;
     height: auto;
     transition: transform ease-in-out 250ms;
 }
