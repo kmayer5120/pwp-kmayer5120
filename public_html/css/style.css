@@ -95,6 +95,27 @@ p {
     width: 75%;
 }
 
+p a {
+    line-height: 1.6;
+    font-size: 0.90rem;
+    color: var(--grapefruit);
+    transition: color 250ms ease-in-out;
+}
+
+p a:hover {
+    color: var(--blueberry);
+    text-decoration: none;
+}
+
+aside {
+    font-size: 1rem;
+    color: var(--blueberry);
+}
+
+aside svg {
+    fill: var(--blueberry);
+}
+
 nav {
     background-color: var(--off-white);
     box-shadow: var(--box-shadow);
