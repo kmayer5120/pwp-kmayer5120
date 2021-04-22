@@ -248,6 +248,11 @@ nav {
     transform: translateY(-0.15rem);
 }
 
+#yardage-used {
+    background: var(--off-white);
+    color: var(--muted-text);
+}
+
 #contact-wrapper {
     display: flex;
     flex-direction: row;
