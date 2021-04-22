@@ -130,6 +130,13 @@ nav {
     background-color: var(--blueberry);
 }
 
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
 /*SECTION STYLING*/
 
 #img-header {
@@ -223,6 +230,21 @@ nav {
 }
 
 #btn-send:hover {
+    transform: translateY(-0.15rem);
+}
+
+#btn-calc {
+    background-color: var(--grapefruit);
+    color: var(--light-text);
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    transition: transform ease-in-out 300ms;
+}
+
+#btn-calc:hover {
     transform: translateY(-0.15rem);
 }
 
