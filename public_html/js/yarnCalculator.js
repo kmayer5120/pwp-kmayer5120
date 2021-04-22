@@ -1,23 +1,17 @@
 const form = document.getElementById("formCalculator");
 
 const totalYardageUsed = (yardageFullSkein, weightFinishedProject, weightFullSkein) => {
-    if (weightFullSkein < 0) {
-        return "Cannot divide by zero. Please enter the weight of full skein.";
-    }
-    return (yardageFullSkein * weightFinishedProject) / weightFullSkein;
+    return weightFullSkein > 0 ?
+        `${((yardageFullSkein * weightFinishedProject) / weightFullSkein).toFixed(2)} yards used.` :
+        "Skein weight must be greater than zero.";
 }
 
 const displayTotalYardageUsed = () => {
-    const yardageFullSkein = Number(document.getElementById("totalYardageSkein").value);
-    const weightFinishedProject = Number(document.getElementById("weightFinishedProject").value);
-    const weightFullSkein = Number(document.getElementById("weightFullSkein").value);
-    const output = document.getElementById("yardageUsed");
+    const yardageFullSkein = parseFloat(document.getElementById("totalYardageSkein").value);
+    const weightFinishedProject = parseFloat(document.getElementById("weightFinishedProject").value);
+    const weightFullSkein = parseFloat(document.getElementById("weightFullSkein").value);
+    const output = document.getElementById("yardage-used");
 
-    console.log({yardageFullSkein})
-    console.log({weightFullSkein})
-    console.log({weightFinishedProject})
-
-    const yardageUsed = totalYardageUsed(yardageFullSkein, weightFinishedProject, weightFullSkein);
-
-    output.innerText = `${yardageUsed} yards used`;
+    //set p tag to output of calculation
+    output.innerText = totalYardageUsed(yardageFullSkein, weightFinishedProject, weightFullSkein);
 }
