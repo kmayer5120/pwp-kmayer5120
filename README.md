@@ -14,7 +14,7 @@
 - Docker
 - Digital Ocean
 
-To be deployed to www.erstellknots.com
+Deployed to www.erstellknots.com
 
 This website is for my wife's crochet business and has a contact form for several
 types of inquiries. Inquiries can be made by using the contact form on the page.
