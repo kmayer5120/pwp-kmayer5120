@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap");
+/*
+    Global
+ */
+* {
+  margin: 0;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*HTML ELEMENT STYLING*/
+body {
+  background-color: #fffafa;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #6e597a;
+  background: #6e597a;
+}
+
+header h1 {
+  color: #e66b70;
+}
+
+figure {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+form {
+  background-color: #6e597a;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+
+form h3 {
+  color: #ffffff;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  height: 5rem;
+  width: 100vw;
+  background-color: #355170;
+  color: #ffffff;
+}
+
+footer svg {
+  fill: #e66b70;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+footer svg:hover,
+svg:focus {
+  fill: #fffafa;
+  -webkit-transform: translateY(-1.5px);
+          transform: translateY(-1.5px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crafty Girls", cursive;
+  color: #111111;
+  font-weight: 500;
+  line-height: 1;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #3b3b3b;
+  width: 80%;
+}
+
+p a {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #e66b70;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+p a:hover {
+  color: #355170;
+  text-decoration: none;
+}
+
+aside {
+  font-size: 1rem;
+  color: #355170;
+}
+
+aside svg {
+  fill: #355170;
+}
+
+nav {
+  background-color: #fffafa;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  margin-bottom: 3rem;
+}
+
+.navbar {
+  background-color: #355170;
+}
+
+.calculator-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+/*SECTION STYLING*/
+#img-header {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  height: 30%;
+}
+
+#about-me {
+  background-color: #fffafa;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  border-radius: 10px;
+}
+
+#gallery {
+  background-color: #355170;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+
+#gallery img {
+  border-radius: 15px;
+  padding: 0.75rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#services {
+  background-color: #fffafa;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+
+#services-tools img {
+  border-radius: 10px;
+}
+
+#links-container {
+  background-color: #355170;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+
+#links-container svg {
+  fill: white;
+  width: 96px;
+  height: 96px;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+#ravelry-logo {
+  width: 10rem;
+  height: auto;
+  -webkit-transition: -webkit-transform ease-in-out 250ms;
+  transition: -webkit-transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+}
+
+#etsy-logo {
+  -webkit-transition: -webkit-transform ease-in-out 250ms;
+  transition: -webkit-transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+}
+
+#etsy-logo:hover,
+#ravelry-logo:hover,
+#links-container svg:hover {
+  -webkit-transform: translateY(-1.5px) scale(1.05);
+          transform: translateY(-1.5px) scale(1.05);
+  fill: #e66b70;
+}
+
+#links-description {
+  color: #ffffff;
+}
+
+/*COMPONENT STYLING*/
+#btn-send {
+  background-color: #e66b70;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  -webkit-transition: -webkit-transform ease-in-out 300ms;
+  transition: -webkit-transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms, -webkit-transform ease-in-out 300ms;
+}
+
+#btn-send:hover {
+  -webkit-transform: translateY(-0.15rem);
+          transform: translateY(-0.15rem);
+}
+
+#btn-calc {
+  background-color: #e66b70;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  -webkit-transition: -webkit-transform ease-in-out 300ms;
+  transition: -webkit-transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms, -webkit-transform ease-in-out 300ms;
+}
+
+#btn-calc:hover {
+  -webkit-transform: translateY(-0.15rem);
+          transform: translateY(-0.15rem);
+}
+
+#yardage-used {
+  background-color: #fffafa;
+  background: #fffafa;
+  color: #3b3b3b;
+}
+
+#contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact {
+  width: 85vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+#menu-descriptor {
+  color: #111111;
+  margin-left: 10px;
+}
+
+.g-recaptcha {
+  transform: scale(0.77);
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.77);
+  -webkit-transform-origin: 0 0;
+}
+
+/*
+    Large Screens
+ */
+@media screen and (min-width: 900px) {
+  #contact {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
+  }
+  #gallery {
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #about-me-wrapper {
+    width: 85vw;
+  }
+}
+
+/*
+    Small Screens
+ */
+@media screen and (max-width: 500px) {
+  #img-header {
+    width: 75%;
+    height: 75%;
+  }
+  #gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(125px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    grid-gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    border-radius: 0;
+  }
+  #services {
+    margin: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

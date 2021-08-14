@@ -1,0 +1,323 @@
+// /* Bring in Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap");
+
+@import "./variables";
+
+/*
+    Global
+ */
+
+* {
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/*HTML ELEMENT STYLING*/
+body {
+  background-color: $off-white;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $grape;
+  background: $grape;
+}
+
+header h1 {
+  color: $grapefruit;
+}
+
+figure {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+form {
+  background-color: $grape;
+  color: $light-text;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+}
+
+form h3 {
+  color: $light-text;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 5rem;
+  width: 100vw;
+  background-color: $blueberry;
+  color: $light-text;
+}
+
+footer svg {
+  fill: $grapefruit;
+  transition: all 300ms ease-in-out;
+}
+
+footer svg:hover,
+svg:focus {
+  fill: $off-white;
+  transform: translateY(-1.5px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crafty Girls", cursive;
+  color: $dark-text;
+  font-weight: 500;
+  line-height: 1;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: $muted-text;
+  width: 80%;
+}
+
+p a {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: $grapefruit;
+  transition: color 250ms ease-in-out;
+}
+
+p a:hover {
+  color: $blueberry;
+  text-decoration: none;
+}
+
+aside {
+  font-size: 1rem;
+  color: $blueberry;
+}
+
+aside svg {
+  fill: $blueberry;
+}
+
+nav {
+  background-color: $off-white;
+  box-shadow: $box-shadow;
+  margin-bottom: 3rem;
+}
+
+.navbar {
+  background-color: $blueberry;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+/*SECTION STYLING*/
+
+#img-header {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  height: 30%;
+}
+
+#about-me {
+  background-color: $off-white;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+}
+
+#gallery {
+  background-color: $blueberry;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#gallery img {
+  border-radius: 15px;
+  padding: 0.75rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#services {
+  background-color: $off-white;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+}
+
+#services-tools img {
+  border-radius: 10px;
+}
+
+#links-container {
+  background-color: $blueberry;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+}
+
+#links-container svg {
+  fill: white;
+  width: 96px;
+  height: 96px;
+  transition: all ease-in-out 250ms;
+}
+
+#ravelry-logo {
+  width: 10rem;
+  height: auto;
+  transition: transform ease-in-out 250ms;
+}
+
+#etsy-logo {
+  transition: transform ease-in-out 250ms;
+}
+
+#etsy-logo:hover,
+#ravelry-logo:hover,
+#links-container svg:hover {
+  transform: translateY(-1.5px) scale(1.05);
+  fill: $grapefruit;
+}
+
+#links-description {
+  color: $light-text;
+}
+
+/*COMPONENT STYLING*/
+
+#btn-send {
+  background-color: $grapefruit;
+  color: $light-text;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: $box-shadow;
+  transition: transform ease-in-out 300ms;
+}
+
+#btn-send:hover {
+  transform: translateY(-0.15rem);
+}
+
+#btn-calc {
+  background-color: $grapefruit;
+  color: $light-text;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: $box-shadow;
+  transition: transform ease-in-out 300ms;
+}
+
+#btn-calc:hover {
+  transform: translateY(-0.15rem);
+}
+
+#yardage-used {
+  background-color: $off-white;
+  background: $off-white;
+  color: $muted-text;
+}
+
+#contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#menu-descriptor {
+  color: $dark-text;
+  margin-left: 10px;
+}
+
+.g-recaptcha {
+  transform: scale(0.77);
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.77);
+  -webkit-transform-origin: 0 0;
+}
+
+/*
+    Large Screens
+ */
+@media screen and (min-width: 900px) {
+  #contact {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  #gallery {
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #about-me-wrapper {
+    width: 85vw;
+  }
+}
+
+/*
+    Small Screens
+ */
+@media screen and (max-width: 500px) {
+  #img-header {
+    width: 75%;
+    height: 75%;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  #services {
+    margin: 1rem;
+  }
+}
