@@ -12,6 +12,7 @@
   margin: 0;
   font-size: 16px;
   box-sizing: border-box;
+  max-width: 100vw;
 }
 
 /*HTML ELEMENT STYLING*/
@@ -145,6 +146,14 @@ nav {
   border-radius: 10px;
 }
 
+.gallery-section {
+  background-color: $blueberry;
+}
+
+.gallery-heading {
+  color: $light-text;
+}
+
 #gallery {
   background-color: $blueberry;
   display: flex;
@@ -152,7 +161,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  max-width: 100vw;
 }
 
 #gallery img {
@@ -190,7 +199,7 @@ nav {
 }
 
 #ravelry-logo {
-  width: 10rem;
+  width: 100%;
   height: auto;
   transition: transform ease-in-out 250ms;
 }
@@ -253,13 +262,15 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: $grape;
 }
 
 #contact {
-  width: 85vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: none;
   padding: 1rem;
 }
 
@@ -288,9 +299,7 @@ nav {
   }
 
   #gallery {
-    width: 80vw;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 100vw;
   }
 
   #about-me-wrapper {
@@ -314,7 +323,6 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    border-radius: 0;
   }
 
   #services {
