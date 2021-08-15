@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap");
 
 @import "./variables";
+@import "./utilities";
 
 /*
     Global
@@ -230,7 +231,7 @@ nav {
 
   img {
     position: absolute;
-    top: 0%;
+    top: -10%;
     left: 0%;
     translate: transform(-50%, -50%);
     width: 40%;
@@ -336,6 +337,71 @@ nav {
       left: 25%;
       width: 60%;
     }
+  }
+}
+
+.announcements {
+  border-left: 0.5rem solid $blueberry;
+  &__countdown {
+    width: 100%;
+    background-color: $grapefruit;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+
+    p,
+    span {
+      width: 100%;
+      color: $light-text;
+      font-family: "Nunito";
+      font-size: 1.2rem;
+      padding: 2rem 0;
+      text-align: center;
+    }
+  }
+
+  &__body {
+    max-width: 100%;
+  }
+
+  &__img-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      width: 30%;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    p,
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    border-left: none;
+    p,
+    span {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+#etsy-link,
+#ravelry-link {
+  visibility: hidden;
+  display: block;
+  margin: 0 auto;
+  color: $grapefruit;
+
+  &:hover {
+    color: $blueberry;
+    text-decoration: none;
+    transition: color 250ms ease-in-out;
   }
 }
 
