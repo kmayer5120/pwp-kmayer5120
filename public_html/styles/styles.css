@@ -249,7 +249,7 @@ nav {
 }
 
 #ravelry-logo {
-  width: 100%;
+  width: 12rem;
   height: auto;
   -webkit-transition: -webkit-transform ease-in-out 250ms;
   transition: -webkit-transform ease-in-out 250ms;
@@ -277,6 +277,122 @@ nav {
 }
 
 /*COMPONENT STYLING*/
+.hero {
+  background: linear-gradient(45deg, #ededed 60%, #93bcd6 100%);
+  width: 100vw;
+  max-width: 100vw;
+  height: 70vh;
+  position: relative;
+}
+
+.hero img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  translate: transform(-50%, -50%);
+  width: 40%;
+  height: auto;
+}
+
+.hero__text {
+  position: absolute;
+  font-family: "Nunito";
+  font-size: 10vh;
+  font-weight: bold;
+  line-height: 1;
+  top: 45%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #355170;
+}
+
+.hero__subtext {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  font-family: "Nunito";
+  font-size: 3vh;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 100%;
+  color: #93bcd6;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero img {
+    top: -10%;
+  }
+  .hero__text {
+    font-size: 7vh;
+    top: 45%;
+  }
+  .hero__subtext {
+    font-size: 2vh;
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero__text {
+    font-size: 7vh;
+    top: 45%;
+  }
+  .hero__subtext {
+    font-size: 2vh;
+    top: 65%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    height: 80vh;
+  }
+  .hero img {
+    top: 0;
+    width: 100%;
+  }
+  .hero__text {
+    font-size: 5vh;
+    top: 75%;
+    left: 50%;
+  }
+  .hero__subtext {
+    font-size: 3vh;
+    top: 82%;
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero img {
+    top: 0;
+    width: 100%;
+  }
+  .hero__text {
+    font-size: 4vh;
+    top: 75%;
+    left: 50%;
+  }
+  .hero__subtext {
+    font-size: 2.5vh;
+    top: 82%;
+    left: 25%;
+    width: 60%;
+  }
+}
+
 #btn-send {
   background-color: #e66b70;
   color: #ffffff;
