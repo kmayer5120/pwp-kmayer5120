@@ -1,5 +1,6 @@
 // _color.scss
 
+//colors
 $blueberry: #355170;
 $grape: #6e597a;
 $grapefruit: #e66b70;
@@ -10,6 +11,16 @@ $dark: #1b2939;
 $light-text: #ffffff;
 $muted-text: #3b3b3b;
 $dark-text: #111111;
+$grey: #ededed;
+$light-blue: #93bcd6;
+$medium-purple: #b6a2c6;
 
+// hero
+$hero-bg-color: $grey;
+$hero-bg-gradient: linear-gradient(45deg, $hero-bg-color 60%, $light-blue 100%);
+$hero-text-color: $blueberry;
+$hero-subtext-color: $light-blue;
+
+// shadows
 $shadow: #282828;
 $box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
