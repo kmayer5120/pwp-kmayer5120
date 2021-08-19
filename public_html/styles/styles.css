@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap");
+.color-grapefruit {
+  color: #e66b70 !important;
+}
+
+.color-blueberry {
+  color: #355170 !important;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
 /*
     Global
  */
@@ -287,7 +299,7 @@ nav {
 
 .hero img {
   position: absolute;
-  top: 0%;
+  top: -10%;
   left: 0%;
   translate: transform(-50%, -50%);
   width: 40%;
@@ -391,6 +403,83 @@ nav {
     left: 25%;
     width: 60%;
   }
+}
+
+.announcements {
+  border-left: 0.5rem solid #355170;
+}
+
+.announcements__countdown {
+  width: 100%;
+  background-color: #e66b70;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+
+.announcements__countdown p,
+.announcements__countdown span {
+  width: 100%;
+  color: #ffffff;
+  font-family: "Nunito";
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.announcements__body {
+  max-width: 100%;
+}
+
+.announcements__img-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.announcements__img-grid img {
+  width: 30%;
+  height: auto;
+}
+
+@media screen and (min-width: 769px) {
+  .announcements p,
+  .announcements span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .announcements {
+    border-left: none;
+  }
+  .announcements p,
+  .announcements span {
+    font-size: 0.9rem;
+  }
+}
+
+#etsy-link,
+#ravelry-link {
+  visibility: hidden;
+  display: block;
+  margin: 0 auto;
+  color: #e66b70;
+}
+
+#etsy-link:hover,
+#ravelry-link:hover {
+  color: #355170;
+  text-decoration: none;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 
 #btn-send {

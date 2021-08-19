@@ -1,0 +1,15 @@
+// _utilities.scss
+
+@import "./variables";
+
+.color-grapefruit {
+  color: $grapefruit !important;
+}
+
+.color-blueberry {
+  color: $blueberry !important;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
