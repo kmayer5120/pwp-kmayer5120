@@ -9,6 +9,10 @@
     Global
  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   font-size: 16px;
@@ -224,118 +228,129 @@ nav {
 
 .hero {
   background: $hero-bg-gradient;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100vw;
   max-width: 100vw;
   height: 70vh;
-  position: relative;
+  padding: 20rem 0 !important;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   img {
-    position: absolute;
-    top: -10%;
-    left: 0%;
-    translate: transform(-50%, -50%);
-    width: 40%;
+    width: 100%;
     height: auto;
   }
 
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   &__text {
-    position: absolute;
     font-family: "Nunito";
-    font-size: 10vh;
+    font-size: 5rem;
     font-weight: bold;
     line-height: 1;
-    top: 45%;
-    left: 60%;
-    transform: translate(-50%, -50%);
     text-transform: uppercase;
     color: $hero-text-color;
+    max-width: 100%;
   }
 
   &__subtext {
-    position: absolute;
-    top: 60%;
-    left: 40%;
     font-family: "Nunito";
-    font-size: 3vh;
+    font-size: 3rem;
     line-height: 1;
     text-transform: uppercase;
-    max-width: 100%;
+    width: 90%;
     color: $hero-subtext-color;
   }
-
-  @media screen and (max-width: 1024px) {
-    height: 50vh;
-
-    img {
-      top: -10%;
-    }
-
+  @media screen and (min-width: 1441px) {
     &__text {
-      font-size: 7vh;
-      top: 45%;
+      font-size: 6rem;
+      width: 80%;
     }
 
     &__subtext {
-      font-size: 2vh;
-      top: 60%;
+      font-size: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__text {
+      font-size: 4rem;
+    }
+
+    &__subtext {
+      font-size: 2rem;
+      width: 75%;
     }
   }
 
   @media screen and (max-width: 768px) {
-    height: 40vh;
+    padding: 2rem 0 !important;
+
+    img {
+      width: 100%;
+    }
 
     &__text {
-      font-size: 7vh;
-      top: 45%;
+      font-size: 3rem;
     }
 
     &__subtext {
-      font-size: 2vh;
-      top: 65%;
+      font-size: 1.5rem;
     }
   }
 
   @media screen and (max-width: 425px) {
-    height: 80vh;
+    padding: 5rem 0;
 
-    img {
-      top: 0;
-      width: 100%;
+    &__content {
+      align-items: center;
+      justify-content: center;
     }
 
     &__text {
-      font-size: 5vh;
-      top: 75%;
-      left: 50%;
+      font-size: 2.5rem;
+      width: 60%;
     }
 
     &__subtext {
-      font-size: 3vh;
-      top: 82%;
-      left: 25%;
-      width: 50%;
+      font-size: 1rem;
+      width: 40%;
+      padding-bottom: 4rem;
     }
   }
 
   @media screen and (max-width: 375px) {
-    height: 70vh;
-
-    img {
-      top: 0;
-      width: 100%;
-    }
-
     &__text {
-      font-size: 4vh;
-      top: 75%;
-      left: 50%;
+      font-size: 2.5rem;
+      width: 100%;
+      text-align: center;
     }
 
     &__subtext {
-      font-size: 2.5vh;
-      top: 82%;
-      left: 25%;
+      font-size: 1rem;
       width: 60%;
+      text-align: center;
+      padding-bottom: 1.5rem;
     }
   }
 }

@@ -19,7 +19,7 @@ function countdown(dateEnd) {
       dateStart.getUTCFullYear(),
       dateStart.getUTCMonth(),
       dateStart.getUTCDate(),
-      dateStart.getUTCHours(),
+      dateStart.getUTCHours() - 6,
       dateStart.getUTCMinutes(),
       dateStart.getUTCSeconds()
     );
