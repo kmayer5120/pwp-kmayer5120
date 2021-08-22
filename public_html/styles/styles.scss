@@ -51,29 +51,6 @@ form h3 {
   color: $light-text;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  height: 5rem;
-  width: 100vw;
-  background-color: $blueberry;
-  color: $light-text;
-}
-
-footer svg {
-  fill: $sage;
-  transition: all 300ms ease-in-out;
-}
-
-footer svg:hover,
-svg:focus {
-  fill: $off-white;
-  transform: translateY(-1.5px);
-}
-
 h1,
 h2,
 h3,
@@ -305,7 +282,7 @@ nav {
 
     &__text {
       font-size: 2.5rem;
-      width: 60%;
+      width: 90%;
     }
 
     &__subtext {
@@ -315,18 +292,95 @@ nav {
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 376px) and (max-width: 575px) {
+    padding: 5rem 0;
+    height: 90vh;
+
+    &__content {
+      font-family: 'Nunito';
+      align-items: center;
+      padding-bottom: 3rem;
+    }
+
     &__text {
-      font-size: 2.5rem;
-      width: 100%;
+      font-size: 2rem;
+      width: 50%;
       text-align: center;
     }
 
     &__subtext {
       font-size: 1rem;
-      width: 60%;
+      width: 40%;
       text-align: center;
-      padding-bottom: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    &__content {
+      font-family: 'Nunito';
+      align-items: center;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__subtext {
+      width: 70%;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 8rem;
+  width: 100vw;
+  background-color: $blueberry;
+  color: $light-text;
+
+  &__created-by {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    fill: $sage;
+    transition: all $transition-curve-speed;
+
+    &:hover,
+    &:focus {
+      fill: $off-white;
+      transform: translateY(-1.5px);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__copyright {
+      padding-top: 1rem;
+    }
+
+    &__copyright span {
+      display: none;
+    }
+
+    &__created-by {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
     }
   }
 }
