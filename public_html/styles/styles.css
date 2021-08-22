@@ -17,6 +17,7 @@
  */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -30,7 +31,7 @@ html {
 /*HTML ELEMENT STYLING*/
 body {
   background-color: #fffafa;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -47,12 +48,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #6e597a;
-  background: #6e597a;
-}
-
-header h1 {
-  color: #e66b70;
 }
 
 figure {
@@ -61,10 +56,10 @@ figure {
 }
 
 form {
-  background-color: #6e597a;
+  background-color: #b4a8ca;
   color: #ffffff;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
@@ -95,7 +90,7 @@ footer {
 }
 
 footer svg {
-  fill: #e66b70;
+  fill: #a6c9b8;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -113,7 +108,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Crafty Girls", cursive;
+  font-family: 'Crafty Girls', cursive;
   color: #111111;
   font-weight: 500;
   line-height: 1;
@@ -129,7 +124,7 @@ p {
 p a {
   line-height: 1.6;
   font-size: 1rem;
-  color: #e66b70;
+  color: #89c8e6;
   -webkit-transition: color 250ms ease-in-out;
   transition: color 250ms ease-in-out;
 }
@@ -187,53 +182,19 @@ nav {
   background-color: #fffafa;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
-  border-radius: 10px;
-}
-
-.gallery-section {
-  background-color: #355170;
-}
-
-.gallery-heading {
-  color: #ffffff;
-}
-
-#gallery {
-  background-color: #355170;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 100vw;
-}
-
-#gallery img {
-  border-radius: 15px;
-  padding: 0.75rem;
-  max-width: 100%;
-  max-height: 100%;
+  border-radius: 5px;
 }
 
 #services {
   background-color: #fffafa;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
 #services-tools img {
-  border-radius: 10px;
+  margin-top: 2.5rem;
+  border-radius: 5px;
 }
 
 #links-container {
@@ -251,29 +212,40 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
 #links-container svg {
   fill: white;
-  width: 96px;
-  height: 96px;
+  width: 64px;
+  height: 64px;
   -webkit-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
 }
 
-#ravelry-logo {
-  width: 12rem;
-  height: auto;
-  -webkit-transition: -webkit-transform ease-in-out 250ms;
-  transition: -webkit-transform ease-in-out 250ms;
-  transition: transform ease-in-out 250ms;
-  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+.etsy-ravelry-svg-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+#ravelry-logo,
 #etsy-logo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   -webkit-transition: -webkit-transform ease-in-out 250ms;
   transition: -webkit-transform ease-in-out 250ms;
   transition: transform ease-in-out 250ms;
@@ -357,7 +329,7 @@ nav {
 }
 
 .hero__text {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-size: 5rem;
   font-weight: bold;
   line-height: 1;
@@ -367,7 +339,7 @@ nav {
 }
 
 .hero__subtext {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-size: 3rem;
   line-height: 1;
   text-transform: uppercase;
@@ -454,7 +426,7 @@ nav {
 .announcements__countdown {
   width: 100%;
   background-color: #e66b70;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
@@ -463,7 +435,7 @@ nav {
 .announcements__countdown span {
   width: 100%;
   color: #ffffff;
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-size: 1.2rem;
   padding: 2rem 0;
   text-align: center;
@@ -508,6 +480,50 @@ nav {
   }
 }
 
+.image-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+}
+
+.image-grid__section {
+  background-color: #a6c9b8;
+}
+
+.image-grid__card {
+  background-color: #fffafa;
+  padding: 2rem;
+  margin: 0.5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  border-radius: 5px;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.image-grid__card:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  border-radius: 8px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .image-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #etsy-link,
 #ravelry-link {
   visibility: hidden;
@@ -525,11 +541,11 @@ nav {
 }
 
 #btn-send {
-  background-color: #e66b70;
+  background-color: #89c8e6;
   color: #ffffff;
   font-weight: bold;
   font-size: 1.5rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
@@ -545,11 +561,11 @@ nav {
 }
 
 #btn-calc {
-  background-color: #e66b70;
+  background-color: #89c8e6;
   color: #ffffff;
   font-weight: bold;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
@@ -584,7 +600,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #6e597a;
+  background-color: #b4a8ca;
 }
 
 #contact {
@@ -633,9 +649,6 @@ nav {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 1rem;
-  }
-  #gallery {
-    max-width: 100vw;
   }
   #about-me-wrapper {
     width: 85vw;

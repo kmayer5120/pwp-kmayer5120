@@ -1,9 +1,9 @@
 // /* Bring in Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 
-@import "./variables";
-@import "./utilities";
+@import './variables';
+@import './utilities';
 
 /*
     Global
@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -23,7 +24,7 @@ html {
 /*HTML ELEMENT STYLING*/
 body {
   background-color: $off-white;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -31,12 +32,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: $grape;
-  background: $grape;
-}
-
-header h1 {
-  color: $grapefruit;
 }
 
 figure {
@@ -48,7 +43,7 @@ form {
   background-color: $grape;
   color: $light-text;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: $card-border-radius;
   box-shadow: $box-shadow;
 }
 
@@ -69,7 +64,7 @@ footer {
 }
 
 footer svg {
-  fill: $grapefruit;
+  fill: $sage;
   transition: all 300ms ease-in-out;
 }
 
@@ -85,7 +80,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Crafty Girls", cursive;
+  font-family: 'Crafty Girls', cursive;
   color: $dark-text;
   font-weight: 500;
   line-height: 1;
@@ -101,22 +96,22 @@ p {
 p a {
   line-height: 1.6;
   font-size: 1rem;
-  color: $grapefruit;
+  color: $bright-blue;
   transition: color 250ms ease-in-out;
-}
 
-p a:hover {
-  color: $blueberry;
-  text-decoration: none;
+  &:hover {
+    color: $blueberry;
+    text-decoration: none;
+  }
 }
 
 aside {
   font-size: 1rem;
   color: $blueberry;
-}
 
-aside svg {
-  fill: $blueberry;
+  svg {
+    fill: $blueberry;
+  }
 }
 
 nav {
@@ -148,42 +143,18 @@ nav {
 #about-me {
   background-color: $off-white;
   box-shadow: $box-shadow;
-  border-radius: 10px;
-}
-
-.gallery-section {
-  background-color: $blueberry;
-}
-
-.gallery-heading {
-  color: $light-text;
-}
-
-#gallery {
-  background-color: $blueberry;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 100vw;
-}
-
-#gallery img {
-  border-radius: 15px;
-  padding: 0.75rem;
-  max-width: 100%;
-  max-height: 100%;
+  border-radius: $card-border-radius;
 }
 
 #services {
   background-color: $off-white;
-  border-radius: 10px;
+  border-radius: $card-border-radius;
   box-shadow: $box-shadow;
 }
 
 #services-tools img {
-  border-radius: 10px;
+  margin-top: 2.5rem;
+  border-radius: 5px;
 }
 
 #links-container {
@@ -192,25 +163,30 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: $card-border-radius;
   box-shadow: $box-shadow;
+
+  svg {
+    fill: white;
+    width: 64px;
+    height: 64px;
+    transition: all ease-in-out 250ms;
+  }
 }
 
-#links-container svg {
-  fill: white;
-  width: 96px;
-  height: 96px;
-  transition: all ease-in-out 250ms;
+.etsy-ravelry-svg-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#ravelry-logo {
-  width: 12rem;
-  height: auto;
-  transition: transform ease-in-out 250ms;
-}
-
+#ravelry-logo,
 #etsy-logo {
-  transition: transform ease-in-out 250ms;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: transform $transition-curve-speed;
 }
 
 #etsy-logo:hover,
@@ -264,7 +240,7 @@ nav {
   }
 
   &__text {
-    font-family: "Nunito";
+    font-family: 'Nunito';
     font-size: 5rem;
     font-weight: bold;
     line-height: 1;
@@ -274,7 +250,7 @@ nav {
   }
 
   &__subtext {
-    font-family: "Nunito";
+    font-family: 'Nunito';
     font-size: 3rem;
     line-height: 1;
     text-transform: uppercase;
@@ -360,14 +336,14 @@ nav {
   &__countdown {
     width: 100%;
     background-color: $grapefruit;
-    border-radius: 10px;
+    border-radius: $card-border-radius;
     box-shadow: $box-shadow;
 
     p,
     span {
       width: 100%;
       color: $light-text;
-      font-family: "Nunito";
+      font-family: 'Nunito';
       font-size: 1.2rem;
       padding: 2rem 0;
       text-align: center;
@@ -406,6 +382,40 @@ nav {
   }
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+
+  &__section {
+    background-color: $sage;
+  }
+
+  &__card {
+    background-color: $off-white;
+    padding: 2rem;
+    margin: 0.5rem;
+    box-shadow: $box-shadow;
+    border-radius: $card-border-radius;
+    transition: all ease-in-out 300ms;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      border-radius: $card-border-radius-hover;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+
 #etsy-link,
 #ravelry-link {
   visibility: hidden;
@@ -421,33 +431,33 @@ nav {
 }
 
 #btn-send {
-  background-color: $grapefruit;
+  background-color: $bright-blue;
   color: $light-text;
   font-weight: bold;
   font-size: 1.5rem;
-  border-radius: 10px;
+  border-radius: $button-border-radius;
   border: none;
   box-shadow: $box-shadow;
   transition: transform ease-in-out 300ms;
-}
 
-#btn-send:hover {
-  transform: translateY(-0.15rem);
+  &:hover {
+    transform: translateY(-0.15rem);
+  }
 }
 
 #btn-calc {
-  background-color: $grapefruit;
+  background-color: $bright-blue;
   color: $light-text;
   font-weight: bold;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: $button-border-radius;
   border: none;
   box-shadow: $box-shadow;
   transition: transform ease-in-out 300ms;
-}
 
-#btn-calc:hover {
-  transform: translateY(-0.15rem);
+  &:hover {
+    transform: translateY(-0.15rem);
+  }
 }
 
 #yardage-used {
@@ -495,10 +505,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-  }
-
-  #gallery {
-    max-width: 100vw;
   }
 
   #about-me-wrapper {

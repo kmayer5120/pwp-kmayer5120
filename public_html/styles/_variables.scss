@@ -2,10 +2,13 @@
 
 //colors
 $blueberry: #355170;
-$grape: #6e597a;
+$bright-blue: #89c8e6;
+// $grape: #6e597a;
+$grape: #b4a8ca;
 $grapefruit: #e66b70;
 $peach: #eaad8c;
 $light: #fff0e9;
+$sage: #a6c9b8;
 $off-white: #fffafa;
 $dark: #1b2939;
 $light-text: #ffffff;
@@ -24,3 +27,13 @@ $hero-subtext-color: $light-blue;
 // shadows
 $shadow: #282828;
 $box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+
+// cards
+$card-border-radius: 5px;
+$card-border-radius-hover: 8px;
+
+// button
+$button-border-radius: 5px;
+
+// transitions
+$transition-curve-speed: ease-in-out 250ms;
